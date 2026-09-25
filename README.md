@@ -46,7 +46,7 @@ proof. The constants produced are `C = 102` and `ε₀ = 1 / (10 + log(10000 · 
 $`|u|=1`$ put
 
 ```math
-S_u(\varepsilon)=\{z\in\mathbb{C}:\ \|\mathrm{Re}(uz)\|<\varepsilon\}.
+S_u(\varepsilon)=\{z\in\mathbb{C}:\ \|\mathrm{Re}(uz)\|\lt \varepsilon\}.
 ```
 
 Since $`S_u(\varepsilon)\subseteq \bar u\,E(\varepsilon)`$, it suffices to find a finite set $`\Omega`$ of
@@ -212,7 +212,7 @@ $`\theta_5^{j}\theta_{13}^{t}\,g\,m=G_m/P^{n-j}`$ with $`G_m\in\mathbb{Z}[i]`$. 
 gives an explicit unit $`X_j\in(\mathbb{Z}/5^n)^\times`$ with
 
 ```math
-\bigl\|\mathrm{Re}(\theta_5^{j}\theta_{13}^{t}x)-\mathrm{val}(X_jb^t\Lambda(x))/5^{\,n-j}\bigr\|<\sqrt2\,|g|.
+\bigl\|\mathrm{Re}(\theta_5^{j}\theta_{13}^{t}x)-\mathrm{val}(X_jb^t\Lambda(x))/5^{\,n-j}\bigr\|\lt \sqrt2\,|g|.
 ```
 
 So the stripe value of $`\theta_5^{j}\theta_{13}^{t}x`$ can be read off from the label of $`x`$.
@@ -262,7 +262,7 @@ Put $`e(x)=e^{2\pi ix}`$ and $`F(\xi)=\bigl|\sum_{a<N}e(a\xi)\bigr|^2`$. Then $`
 for all these points. On the other hand, expanding $`F`$,
 
 ```math
-\sum_{t,y}F(\xi_{t,y})=\sum_{a,a'<N}\ \sum_{t<S}\sigma_t(a-a'),\qquad \sigma_t(m)=\sum_{y\in\mathcal Y}e(m\,\xi_{t,y}).
+\sum_{t,y}F(\xi_{t,y})=\sum_{a,a'\lt N}\ \sum_{t\lt S}\sigma_t(a-a'),\qquad \sigma_t(m)=\sum_{y\in\mathcal Y}e(m\,\xi_{t,y}).
 ```
 
 The diagonal $`a=a'`$ contributes $`NS|\mathcal Y|`$. Now let $`0<|m|<N`$. The value
@@ -270,7 +270,7 @@ $`|\sigma_t(m)|`$ does not depend on $`\gamma`$, and the map $`t\mapsto\tilde b^
 is injective on $`[0,S)`$. Hence
 
 ```math
-\sum_{t<S}|\sigma_t(m)|^2\le\sum_{u\bmod 5^\ell}\Bigl|\sum_{y}e(muy/5^\ell)\Bigr|^2=5^\ell\,\#\{(y,y'):5^\ell\mid m(y-y')\}\le5^\ell|\mathcal Y|\,|m|.
+\sum_{t\lt S}|\sigma_t(m)|^2\le\sum_{u\bmod 5^\ell}\Bigl|\sum_{y}e(muy/5^\ell)\Bigr|^2=5^\ell\,\#\{(y,y'):5^\ell\mid m(y-y')\}\le5^\ell|\mathcal Y|\,|m|.
 ```
 
 For the last step: the residues $`y'`$ with $`5^\ell\mid m(y-y')`$ are pairwise at least
