@@ -1,0 +1,11 @@
+name = "green41_double_exponential_fc"
+version = "0.1.0"
+defaultTargets = ["Green41DoubleExponentialFC"]
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures"
+rev = "40a8592cb6f7e96cb9a8275d96bb3e013feeb1dc"
+
+[[lean_lib]]
+name = "Green41DoubleExponentialFC"
